@@ -1,15 +1,19 @@
-\begin{figure}[ht]
-\noindent
+\begin{figure}[t]
 \centering
-\begin{minipage}{.5\textwidth}
+\begin{minipage}[t]{.48\textwidth}
 \centering
+    \vspace{0pt}
     \includegraphics[width=\linewidth]{fig/plots/scores.pdf}
-    \caption{Distribution of user scores.}
+    \vspace{1ex}
+    \caption{Distribution of user prediction accuracy scores (1.0 = all inferable attributes correctly identified; 0.0 = none correct).}
     \label{fig:score_distribution}
-\end{minipage}\begin{minipage}{.5\textwidth}
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}
 \centering
+    \vspace{0pt}
     \includegraphics[width=\linewidth]{fig/plots/weighted_scores.pdf}
-    \caption{Distribution of user weighted scores.}
+    \vspace{1ex}
+    \caption{Distribution of weighted accuracy scores, reflecting both correct identifications and correct rejections.}
     \label{fig:weighted_score_distribution}
 \end{minipage}
 \end{figure}

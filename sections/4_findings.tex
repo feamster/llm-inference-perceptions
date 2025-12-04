@@ -1,7 +1,7 @@
 \section{Findings}
 In this section, we will go through our findings in detail. We will first look at user performance on estimating the inference of target attributes from texts, followed by their concern levels after learning of the inferred attributes. Finally, we will present the evaluation of user rewrites.
 
-\subsection{User Estimation}
+\subsection{User Estimation of Attribute Inference}
 \label{sec:user_estimation}
 \input{fig/matrix}
 As shared earlier in Section~\ref{sec:survey_questions}, participants are shown a text and asked to select which of the eight private attributes are inferable from the text by LLMs. Remember that only one attribute is inferable from each text (due to our selection of texts as discussed in Section~\ref{sec:dataset}), but participants are not given this information and are allowed to select more than one attribute. Figure~\ref{fig:matrix} summarizes their selections. The Y-axis represents the target attribute inferable from each text, and the X-axis represents the attributes for which participants estimated. 
@@ -24,12 +24,12 @@ Figure~\ref{fig:score_distribution} and~\ref{fig:weighted_score_distribution} al
 Finally, we tested for correlations between participant scores and how frequently they use any LLMs and their demographic information (their age, gender, and education level), but found no correlation. Categories under each type of information were used as variables, and we compared the distribution of scores (count of participants who got each possible score) using the Chi-Square Test of Independence. P-values for age, gender, and education level are 0.4471, 0.4889, 0.8388, and 0.3054, respectively. For the score distributions across different demographic and LLM usage variables, see Figure~\ref{fig:score_by_usage},~\ref{fig:score_by_age},~\ref{fig:score_by_gender}, and~\ref{fig:score_by_education} in Appendix~\ref{app:additional_analysis}.
 
 
-\subsection{User Concern Levels}\label{sec:user_concern}
+\subsection{User Concern About Attribute Inference}\label{sec:user_concern}
 \input{fig/concern_levels}
 28\% of participants were not at all concerned about all four attributes they were asked about, and 44\% of participants were concerned about (slightly concerned or more) all four attributes. Figure~\ref{fig:cl_by_attribute} shows the distribution of concern levels by attribute type. We computed the pairwise Kullback-Leibler (KL) divergence metric for the concern distributions of each attribute pair, and found that all the divergence values were below 0.1, showing that the difference between concern levels across attributes is not significant.
 
 
-\subsection{Rewrite Evaluation}
+\subsection{Evaluating Rewrite Strategies}
 To evaluate the effectiveness of participant rewrites in preventing attribute inference, we first identify whether the inference is still possible from the rewrites. To benchmark participants' performance with online tools, we also evaluate rewrites from ChatGPT and the Rescriber data sanitization tool. 
 Table~\ref{table:rewrite_success} shows the effectiveness of rewrites for our participants, as well as ChatGPT and Rescriber.
 

@@ -6,7 +6,7 @@ Commonly published large language models (LLMs) are frequently trained on both p
 
 LLMs are also prone to other adversarial attacks like prompt hacking, which manipulate input prompts to obtain desired and sometimes unintended or malicious outputs~\cite{crothers2023machine}. These can be further classified into \textit{Prompt Injection} or \textit{Jailbreaking} attacks~\cite{das2025security}. In prompt injection, the attacker aims to misalign the goal of original prompts or recover information from private prompts~\cite{perez2022ignore}. On the other hand, jailbreaking prompts aim to bypass (safety) restrictions, say to generate malicious, toxic, harmful, or offensive content~\cite{liu2023jailbreaking}. 
 
-Both memorization and prompt hacking techniques have been extensively leveraged to extract personal attributes, including PIIs, from LLMs. Prior research has demonstrated that private information can be extracted by simply querying LLMs~\cite{lukas2023analyzing, li-etal-2023-multi-step}. In fact, it has been shown that it is feasible to extract names and email addresses even if they appear only once in the training data~\cite{carlini2021extracting}. However, this prior research on PII leakage from LLMs has certain shortcomings: they either focus on extracting specific PII types (e.g., email addresses~\cite{huang-etal-2022-large} or phone numbers~\cite{nakka2024pii}), are specific to one domain (e.g., biomedical~\cite{nakamura2020kart}), or are evaluated on small transformer-based language models~\cite{Siwon2023propile, inan2021training}.
+Both memorization and prompt hacking techniques have been extensively leveraged to extract personal attributes, including PII, from LLMs. Prior research has demonstrated that private information can be extracted by simply querying LLMs~\cite{lukas2023analyzing, li-etal-2023-multi-step}. In fact, it has been shown that it is feasible to extract names and email addresses even if they appear only once in the training data~\cite{carlini2021extracting}. However, this prior research on PII leakage from LLMs has certain shortcomings: they either focus on extracting specific PII types (e.g., email addresses~\cite{huang-etal-2022-large} or phone numbers~\cite{nakka2024pii}), are specific to one domain (e.g., biomedical~\cite{nakamura2020kart}), or are evaluated on small transformer-based language models~\cite{Siwon2023propile, inan2021training}.
 
 \subsection{Personal Attribute Inference by LLMs}
 \label{sec:rel_attribute_inference}
@@ -19,7 +19,19 @@ This has motivated some to generate synthetic datasets, such as SynthPAI~\cite{s
 
 
 \subsection{User Perceptions of AI and Privacy}
-User perceptions when interacting with conversational chatbots have been extensively studied in the usable privacy literature (e.g., ~\cite{chalhoub2020alexa, chametka2023security, belen2021privacy}). Most of these are on pre-date LLMs, and there is limited user research on LLM-specific conversational agents, most of which are small-scale qualitative interview studies~\cite{kimbel2024security,zhang2024s} or one-country focused surveys~\cite{malki2025hoovered,liu2025prevalence}. These studies have shown that users are primarily concerned about the collection and storage of chat interactions~\cite{belen2021privacy,chametka2023security,kimbel2024security,zhang2024s} and service providers' ability to create personalized profiles~\cite{liu2025prevalence,rescriber}. Users have also expressed unease around LLMs' unauthorized data sharing and cyber attacks~\cite{alawida2024unveiling, alkamli2024understanding}. 
+User perceptions when interacting with conversational chatbots have been
+extensively studied in the usable privacy literature (e.g.,
+~\cite{chalhoub2020alexa, chametka2023security, belen2021privacy}). Most of
+these are on pre-LLM chatbots, and there is limited user research on LLM-specific
+conversational agents, most of which are small-scale qualitative interview
+studies~\cite{kimbel2024security,zhang2024s} or one-country focused
+surveys~\cite{malki2025hoovered,liu2025prevalence}. These studies have shown
+that users are primarily concerned about the collection and storage of chat
+interactions~\cite{belen2021privacy,chametka2023security,kimbel2024security,zhang2024s}
+and service providers' ability to create personalized
+profiles~\cite{liu2025prevalence,rescriber}. Users have also expressed unease
+around LLMs' unauthorized data sharing and cyber
+attacks~\cite{alawida2024unveiling, alkamli2024understanding}. 
 
 Furthermore, Zhang et al.~\cite{zhang2024s} found that users held erroneous mental models of how conversational agents like ChatGPT generate responses (e.g., assumed LLMs work like search engines), and they did not understand LLM-specific risks such as memorization. In another study, Malki et al.~\cite{malki2025hoovered} found that engagement with privacy protective controls offered by LLMs was overall low, and that many participants held mismatched expectations of opting out of model training and the effects of deleting data. This lack of awareness of privacy risks and misunderstandings around how LLMs operate technically limits their ability to give informed consent and protect themselves against privacy risks~\cite{DSIT2024PublicAttitudes, kimbel2024security, zhang2024s, rescriber}. 
 
