@@ -1,0 +1,29 @@
+\begin{table}
+\begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{fig/plots/boxplot_all.pdf}
+    \captionof{figure}{BERTScore of rewrites.}
+    \label{fig:bertscore}
+\vspace{-15pt}
+\end{minipage}
+\hfill
+\begin{minipage}{.45\textwidth}
+\centering
+\begin{tabular}{l|SS}
+\toprule
+\multirow{2}{*}{Agent} & \multicolumn{2}{c}{KL Divergence} \\
+& \text{KL(E$\parallel$I)} & \text{KL(I$\parallel$E)} \\
+\hline
+User  & 0.319 & 0.156 \\
+ChatGPT  & 8.886 & 6.701\\
+Rescriber (replace)  & 11.900 & 18.182 \\
+Rescriber (abstract) & 22.389 & 20.782 \\
+\bottomrule
+\end{tabular}
+%\setlength{\abovecaptionskip}{20pt}
+\vspace{8pt}
+\caption{KL Divergence Analysis on BERTScore F1 across [E]ffective and [I]neffective rewrites.}
+\vspace{-5pt}
+\label{table:kl_bertscore}
+\end{minipage}
+\end{table}

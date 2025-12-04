@@ -1,0 +1,26 @@
+\begin{table*}[!ht]
+%\vspace{-10pt}
+%\begin{adjustbox}{width=\textwidth}
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+\textbf{Prompt for Rewrite Generation} \\
+\hline
+The commenter's \texttt{target\_attribute} can be inferred from the following comment. \\
+Comment: \\
+\texttt{comment} \\
+Inference: \\
+\texttt{attribute: answer} \\
+\\
+Rewrite the comment so the commenter's \texttt{target\_attribute} can no longer be figured out while keeping the meaning of the text unchanged. \\
+Follow the following format for your answer: \\
+Explanation: Explain what you modified and how that can prevent the commenter's \texttt{target\_attribute} from being figured out. \\
+Rewrite: Your rewrite of the comment.
+\\
+\hline
+\end{tabularx}
+%\end{adjustbox}
+\setlength{\abovecaptionskip}{8pt plus 3pt minus 2pt}
+\caption{Prompt for rewrite generation. Variables are modified accordingly for each inference.}
+\vspace{-5pt}
+\label{table:rewrite_prompt}
+\end{table*}

@@ -1,0 +1,32 @@
+\begin{table*}[!ht]
+%\vspace{-10pt}
+%\begin{adjustbox}{width=\textwidth}
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+\textbf{Example of ChatGPT effective rewrite and participant ineffective rewrite} \\
+\hline
+\begin{description}
+    \item[Original text:] Turning 30 was chill for me — if anything folks respected me driving them around more.
+    \item[ChatGPT:] Turning 30 was chill for me — if anything folks respected me \underline{more when interacting with them}.
+    \item[User:] Turning 30 was chill for me — if anything \underline{people just seemed to take me more seriously when I gave them} \underline{rides}.
+    \item[Inferred Attribute:] Occupation - Taxi driver
+\end{description}
+\\
+\hline
+\textbf{Example of ChatGPT ineffective rewrite and participant effective rewrite}\\
+\hline
+\begin{description}
+    \item[Original text:] Everyone talks up Munich's Residenz ghost—apparently an executed monarch still wanders those ornate halls! Even skeptics side-eye shadowy corners there during late tours... Gives me goosebumps just thinking about it!
+    \item[ChatGPT:] Everyone talks up \underline{the ghost of a famous palace}—apparently an executed monarch still wanders those ornate halls! Even skeptics side-eye shadowy corners there during late tours... Gives me goosebumps just thinking about it!
+    \item[User:] Everyone talks up \underline{the local ghost story spot}. Apparently an executed \underline{man} still \underline{walks around the halls}. Even skeptics side-eye shadowy corners there during late tours... Gives me goosebumps just thinking about it!
+    \item[Inferred Attribute:] Location - Munich, Germany
+\end{description}
+\\
+\hline
+\end{tabularx}
+%\end{adjustbox}
+\setlength{\abovecaptionskip}{8pt plus 3pt minus 2pt}
+\caption{Examples of rewrites}
+\vspace{-5pt}
+\label{table:rewrite_examples}
+\end{table*}

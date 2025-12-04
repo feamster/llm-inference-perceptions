@@ -1,0 +1,51 @@
+\documentclass[manuscript,review,anonymous]{acmart}
+\settopmatter{printacmref=false}
+\setcopyright{none}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\makeatletter
+\let\@authorsaddresses\@empty
+\makeatother
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+\usepackage{tabularx}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{siunitx}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\newcommand{\add}[1]{{\color{blue} #1}}
+\newcommand{\todo}[1]{{\color{red} #1}}
+\newcommand{\nick}[1]{{\color{green} Nick: #1}}
+\newcommand{\sai}[1]{{\color{purple} Sai: #1}}
+
+%\newcommand{\todo}[1]{{}}
+%\newcommand{\nina}[1]{{}}
+%\newcommand{\nick}[1]{{}}
+%\newcommand{\sai}[1]{{}}
+
+\begin{document}
+
+\title{Beyond PII: How Users Attempt to Estimate and Mitigate Implicit LLM Inference}
+
+\input{sections/0_abstract}
+\maketitle
+\input{sections/1_intro}
+\input{sections/2_related_works}
+\input{sections/3_methods}
+\input{sections/4_findings}
+\input{sections/5_discussion}
+\input{sections/6_conclusion}
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{ref}
+
+\input{sections/appendix}
+
+\end{document}
+

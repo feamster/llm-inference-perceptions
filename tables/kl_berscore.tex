@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|SS}
+\toprule
+\multirow{2}{*}{Agent} & \multicolumn{2}{c}{KL Divergence} \\
+& \text{KL(E$\parallel$I)} & \text{KL(I$\parallel$E)} \\
+\hline
+User  & 0.319 & 0.156 \\
+ChatGPT  & 8.886 & 6.701\\
+Rescriber (replace)  & 11.900 & 18.182 \\
+Rescriber (abstract) & 22.389 & 20.782 \\
+\bottomrule
+\end{tabular}
+\setlength{\abovecaptionskip}{10pt plus 3pt minus 2pt}
+\caption{KL Divergence Analysis on BERTScore F1}
+\vspace{-5pt}
+\label{table:kl_bertscore}
+\end{table}

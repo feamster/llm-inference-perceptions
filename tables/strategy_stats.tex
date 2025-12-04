@@ -1,0 +1,46 @@
+\begin{table}
+%\begin{minipage}{.5\textwidth}
+%    \centering
+% \hspace{-15pt}   \includegraphics[width=\linewidth]{fig/plots/bertscore.pdf}
+%    \captionof{figure}{BERTScore by rewrite strategy.}
+%    \label{fig:bertscore_strategy}
+%\vspace{-15pt}
+%\end{minipage}
+%\hfill
+%\begin{minipage}{.4\textwidth}
+%\begin{table}[htbp]
+%\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Strategy} & \textbf{Overall \%} & \textbf{Effective} & \textbf{Percentage} \\
+\midrule
+\multirow{2}{*}{Paraphrasing} & \multirow{2}{*}{59.7\%} & \cmark & 36.5\% \\
+\cline{3-4}
+ & & \xmark & 63.5\% \\
+\hline
+\multirow{2}{*}{Omission/Deletion} & \multirow{2}{*}{33.1\%} & \cmark & 63.4\% \\
+\cline{3-4}
+ & & \xmark & 36.6\% \\
+\hline
+\multirow{2}{*}{Generalization/Abstraction} & \multirow{2}{*}{19.4\%} & \cmark & 66.7\% \\
+\cline{3-4}
+ & & \xmark & 33.3\% \\
+\hline
+\multirow{2}{*}{Adding Ambiguity} & \multirow{2}{*}{11.3\%} & \cmark & 71.4\% \\
+\cline{3-4}
+ & & \xmark & 28.6\% \\
+\hline
+\multirow{2}{*}{Misdirection} & \multirow{2}{*}{9.7\%} & \cmark & 58.3\% \\
+\cline{3-4}
+ & & \xmark & 41.7\% \\
+\bottomrule
+\end{tabular}
+%\setlength{\abovecaptionskip}{10pt plus 3pt minus 2pt}
+\vspace{8pt}
+\caption{Distribution of rewrite strategies}
+\vspace{-20pt}
+\label{table:strategy_status}
+%\end{table}
+%\end{minipage}
+\end{table}
+
