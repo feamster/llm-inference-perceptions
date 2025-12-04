@@ -57,7 +57,7 @@ Rescriber was able to produce more effective rewrites with its `replace' method 
 \subsubsection{Semantic Similarity}
 %\input{fig/bertscore}
 \input{fig/bert_fig_tab}
-Mitigating a privacy risk often involves losses in utility; it is thus interesting to see what impact effective rewrites have on the semantic meaning of the original text. To measure how semantically similar the rewrites were to the original text, we calculated the F1 BERTScore for each rewrite-original text pair. \add{It is worth noting that BERTScore provides a measure of overall semantic similarity between two sentences, and is less sensitive to localized edits. It is not a direct measure of effectiveness.
+Mitigating a privacy risk often involves losses in utility; it is thus interesting to see what impact effective rewrites have on the semantic meaning of the original text. To measure how semantically similar the rewrites were to the original text, we calculated the F1 BERTScore for each rewrite-original text pair. \add{It is worth noting that BERTScore provides a measure of overall semantic similarity between two sentences, and is less sensitive to localized edits. It is not a direct measure of rewrite effectiveness.
 %the resulting scores should not be interpreted as meaningful at the level of individual rewrites. 
 Instead, we use BERTScore as an aggregate indicator of how much semantic content is altered across the dataset, rather than as a precise measure of sentence-level equivalence.}
 
